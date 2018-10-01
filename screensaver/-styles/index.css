@@ -1,0 +1,241 @@
+body {
+    font-family: system-ui, 'Helvetica Neue', 'Helvetica', sans-serif;
+}
+
+.rb-navbar {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 52px;
+    padding-right: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rb-navbar-logo {
+    width: 64px;
+    height: 64px;
+}
+
+.rb-navbar-logo-text {
+    padding-left: 10px;
+    vertical-align: middle;
+    font-size: 28px;
+}
+
+.rb-logo-text {
+    font-weight: 900;
+    background: -webkit-linear-gradient(0deg, #F96D49 0%, #9F43A0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.rb-mobile-logo-text {
+    font-size: 36px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    width: 100%;
+}
+
+.rb-navbar-download-text {
+    font-weight: 900;
+    font-size: 20px;
+    color: black;
+    vertical-align: middle;
+}
+
+.rb-navbar-icon {
+    width: 32px;
+    height: 32px;
+    margin-left: 23px;
+}
+
+.rb-hero-img {
+    width: 100%;
+    min-height: 350px;
+    object-fit: cover;
+}
+
+@media only screen and (min-width: 768px) {
+    .rb-hero-img {
+        margin-bottom: 52px;
+    }
+}
+
+.rb-navbar-download-icon {
+    display: none;
+}
+
+.rb-mobile-logo-text-container {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .rb-navbar-logo-text {
+        display: none;
+    }
+
+    .rb-navbar-download-text {
+        display: none;
+    }
+
+    .rb-navbar-download-icon {
+        display: unset;
+    }
+
+    .rb-mobile-logo-text-container {
+        display: unset;
+    }
+}
+
+.rb-feature-card {
+    height: 543px;
+    border-radius: 35px;
+    margin:0 auto;
+    margin-bottom: 52px;
+    max-width: 401px;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+
+.rb-feature-card:hover {
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.35);
+    transition: 0.2s;
+}
+
+.rb-feature-card p {
+    font-weight: 800;
+    line-height: normal;
+    font-size: 36px;
+    color: #FFFFFF;
+
+    padding-top: 44px;
+    margin-left: 44px;
+    margin-right: 52px;
+}
+
+.rb-feature-card img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 27px;
+    max-width: 251px;
+    width: 100%;
+
+    position: relative;
+    top: 0;
+    transition: top ease 0.2s;
+}
+
+.rb-feature-card img:hover {
+    top: -12px;
+}
+
+.rb-gradient-bg-1 {
+    background: linear-gradient(140.22deg, #CA5AAE 0%, #6868DF 100%);
+}
+
+.rb-gradient-bg-2 {
+    background: linear-gradient(140.22deg, #E1588F 0%, #AC4AD7 100%);
+}
+
+.rb-gradient-bg-3 {
+    background: linear-gradient(140.22deg, #8961EC 0%, #549BE1 100%);
+}
+
+.rb-gradient-bg-4 {
+    background: linear-gradient(131.79deg, #F96D49 0%, #9F43A0 100%);
+}
+
+.rb-download-container {
+    text-align: center;
+}
+
+@media only screen and (max-width: 992px) {
+    .rb-download-container {
+        text-align: left;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .rb-download-container {
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+}
+
+.rb-download-header {
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.rb-download-copy {
+    font-size: 18px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.75);
+    line-height: normal;
+    margin-bottom: 30px;
+}
+
+.rb-download-button {
+    background-color: #007AFF;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+    padding: 14px 23px;
+    border-radius: 15px;
+    color: #FFF;
+    font-weight: 900;
+    line-height: normal;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.rb-download-button:hover {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    transition: 0.2s;
+    color: #FFF;
+    background-color: rgb(5, 108, 218);
+}
+
+.rb-footer {
+    background-color: #EFEFF4;
+    margin-top: 60px;
+    padding-bottom: 32px;
+}
+
+@media only screen and (max-width: 768px) {
+    .rb-footer {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}
+
+.rb-footer-container {
+    padding-top: 16px;
+    color: rgba(0, 0, 0, 0.75);
+    line-height: normal;
+    font-size: 18px;
+}
+
+.rb-footer-logo {
+    display: block;
+    width: 84px;
+    height: 84px;
+    margin-bottom: 12px;
+    margin-left: -10px;
+}
+
+.rb-footer-copy {
+    max-width: 400px;
+    font-weight: 500;
+}
+
+.rb-footer-links {
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.rb-no-underline-a:hover {
+    text-decoration-line: none;
+}
